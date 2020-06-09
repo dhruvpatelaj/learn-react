@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-function Tweet({ name, tweet }) {
+function Tweet({ name, tweet, numLikes }) {
   return (
     <div className="tweet">
       <h3>{name}</h3>
       <p>{tweet}</p>
-      <h3>Number of likes</h3>
+      <h3>{numLikes}</h3>
     </div>
   );
 }
